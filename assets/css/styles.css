@@ -642,12 +642,19 @@ h1, h2, h3 { font-family: "Barlow Condensed", Inter, sans-serif; letter-spacing:
 .visiting-ottawa strong { color:white; }
 .event-card-fab svg { display:block; }
 
-.ottawa-grid { display:grid; grid-template-columns:1.4fr 1fr; gap:36px; align-items:start; }
+.ottawa-grid { display:grid; grid-template-columns:1.4fr 1fr; gap:24px; align-items:start; }
+.ottawa-copy { padding:30px; border:1px solid rgba(255,255,255,.13); border-radius:18px; background:#151518; min-width:0; }
 .ottawa-copy > p:first-child { margin-top:0; }
+.ottawa-copy ul { list-style:none; padding:0; margin:24px 0; }
+.ottawa-copy li + li { margin-top:20px; padding-top:20px; border-top:1px solid rgba(255,255,255,.13); }
+.ottawa-copy li > strong:first-child { display:block; margin-bottom:8px; color:#ff7c8c; font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; }
+.ottawa-copy .venue-note { margin-bottom:0; }
 .visiting-ottawa .museum-link { color:inherit; text-decoration:underline; text-decoration-color:#ffffff55; text-underline-offset:3px; }
 .visiting-ottawa .museum-link:hover { color:#ff7c8c; text-decoration-color:currentColor; }
-.ottawa-photo { margin:0; }
-.ottawa-photo img { display:block; width:100%; height:auto; border-radius:18px; border:1px solid #ffffff25; }
-.ottawa-photo figcaption { margin-top:10px; color:#8f949d; font-size:.7rem; line-height:1.5; }
+.ottawa-photo { margin:0; overflow:hidden; border:1px solid rgba(255,255,255,.13); border-radius:18px; background:#151518; }
+.ottawa-photo img { display:block; width:100%; height:auto; }
+.ottawa-photo figcaption { padding:14px 18px; color:#8f949d; font-size:.7rem; line-height:1.5; }
 .ottawa-photo figcaption a { color:inherit; text-underline-offset:2px; }
 @media (max-width:900px) { .ottawa-grid { grid-template-columns:1fr; gap:24px; } .ottawa-photo { max-width:600px; } }
+
+@media (max-width:660px) { .ottawa-copy { padding:23px; } .ottawa-copy .btn { width:100%; } }
