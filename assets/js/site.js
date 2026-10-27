@@ -30,7 +30,7 @@
   if(valid(c.canonicalUrl)) {
     let canonical = document.querySelector('link[rel=\"canonical\"]');
     if(!canonical) { canonical = document.createElement('link'); canonical.rel = 'canonical'; document.head.appendChild(canonical); }
-    canonical.href = c.canonicalUrl.replace(/\/$/,'') + (location.pathname.endsWith('/') ? '/' : location.pathname.replace(/^.*\//,''));
+    canonical.href = c.canonicalUrl.replace(/\/$/,'') + '/' + (location.pathname.endsWith('/') ? '' : location.pathname.replace(/^.*\//,''));
   }
 
   const forms = {
