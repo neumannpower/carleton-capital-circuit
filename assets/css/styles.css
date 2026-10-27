@@ -635,9 +635,19 @@ h1, h2, h3 { font-family: "Barlow Condensed", Inter, sans-serif; letter-spacing:
 .registered-team-list strong { display:inline-block; min-width:52px; }
 .registered-teams .team-note { margin-top:18px; font-size:.8rem; }
 .registration-sidebar { position:static; align-self:start; }
-.visiting-ottawa { margin-top:48px; padding-top:36px; border-top:1px solid #ffffff30; max-width:850px; }
+.visiting-ottawa { margin-top:48px; padding-top:36px; border-top:1px solid #ffffff30; max-width:none; }
 .visiting-ottawa h2 { margin:0 0 18px; font-size:clamp(2rem,4vw,3.2rem); text-transform:uppercase; }
 .visiting-ottawa p,.visiting-ottawa li { color:#b7bbc2; }
 .visiting-ottawa li { margin-bottom:12px; }
 .visiting-ottawa strong { color:white; }
 .event-card-fab svg { display:block; }
+
+.ottawa-grid { display:grid; grid-template-columns:1.4fr 1fr; gap:36px; align-items:start; }
+.ottawa-copy > p:first-child { margin-top:0; }
+.visiting-ottawa .museum-link { color:inherit; text-decoration:underline; text-decoration-color:#ffffff55; text-underline-offset:3px; }
+.visiting-ottawa .museum-link:hover { color:#ff7c8c; text-decoration-color:currentColor; }
+.ottawa-photo { margin:0; }
+.ottawa-photo img { display:block; width:100%; height:auto; border-radius:18px; border:1px solid #ffffff25; }
+.ottawa-photo figcaption { margin-top:10px; color:#8f949d; font-size:.7rem; line-height:1.5; }
+.ottawa-photo figcaption a { color:inherit; text-underline-offset:2px; }
+@media (max-width:900px) { .ottawa-grid { grid-template-columns:1fr; gap:24px; } .ottawa-photo { max-width:600px; } }
