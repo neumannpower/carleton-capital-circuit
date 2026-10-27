@@ -340,10 +340,14 @@ h1, h2, h3 { font-family: "Barlow Condensed", Inter, sans-serif; letter-spacing:
 }
 .event-card-fab:hover { transform: translateY(-2px); background: var(--cu-red-dark); }
 .event-card-fab span {
-  display:grid;
-  place-items:center;
-  width:31px;
-  height:31px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 32px;
+  width:32px;
+  height:32px;
+  padding:0;
+  line-height:0;
   border-radius:50%;
   background:#fff;
   color:#111;
