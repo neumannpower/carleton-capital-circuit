@@ -1,0 +1,92 @@
+[
+  {
+    "number": "188",
+    "name": "Blizzard",
+    "location": "Scarborough"
+  },
+  {
+    "number": "2706",
+    "name": "Merge Robotics",
+    "location": "Ottawa"
+  },
+  {
+    "number": "2708",
+    "name": "Lake Effect Robotics",
+    "location": "Kingston"
+  },
+  {
+    "number": "3543",
+    "name": "C4 robotics",
+    "location": "Arnprior"
+  },
+  {
+    "number": "3544",
+    "name": "Spartiates",
+    "location": "Montréal-Nord"
+  },
+  {
+    "number": "3990",
+    "name": "Tech for Kids",
+    "location": "Montreal"
+  },
+  {
+    "number": "7476",
+    "name": "Spongebotics",
+    "location": "Kanata (Earl of March)"
+  },
+  {
+    "number": "7480",
+    "name": "Machine Mavericks",
+    "location": "Kingston"
+  },
+  {
+    "number": "7902",
+    "name": "Markham Firebirds",
+    "location": "Markham, Ontario"
+  },
+  {
+    "number": "8729",
+    "name": "Sparkling H2O",
+    "location": "Kanata"
+  },
+  {
+    "number": "9062",
+    "name": "Critical Circuits",
+    "location": "Hamilton"
+  },
+  {
+    "number": "9406",
+    "name": "TechJunior",
+    "location": "Montreal"
+  },
+  {
+    "number": "10015",
+    "name": "Bubbles",
+    "location": "Aurora"
+  },
+  {
+    "number": "11325",
+    "name": "Inverse Paradise",
+    "location": "Toronto"
+  },
+  {
+    "number": "11809",
+    "name": "Kujenga Robotics",
+    "location": "Ottawa"
+  },
+  {
+    "number": "24760",
+    "name": "Scuola",
+    "location": "Ottawa"
+  },
+  {
+    "number": "36685",
+    "name": "Emerging Tech",
+    "location": "Ottawa"
+  },
+  {
+    "number": "37253",
+    "name": "Aloucs Robotics",
+    "location": "Kanata"
+  }
+]
