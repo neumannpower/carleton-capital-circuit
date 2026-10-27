@@ -2,91 +2,109 @@
   {
     "number": "188",
     "name": "Blizzard",
-    "location": "Scarborough"
+    "location": "Scarborough",
+    "program": "FRC"
   },
   {
     "number": "2706",
     "name": "Merge Robotics",
-    "location": "Ottawa"
+    "location": "Ottawa",
+    "program": "FRC"
   },
   {
     "number": "2708",
     "name": "Lake Effect Robotics",
-    "location": "Kingston"
+    "location": "Kingston",
+    "program": "FRC"
   },
   {
     "number": "3543",
     "name": "C4 robotics",
-    "location": "Arnprior"
+    "location": "Arnprior",
+    "program": "FRC"
   },
   {
     "number": "3544",
     "name": "Spartiates",
-    "location": "Montréal-Nord"
+    "location": "Montréal-Nord",
+    "program": "FRC"
   },
   {
     "number": "3990",
     "name": "Tech for Kids",
-    "location": "Montreal"
+    "location": "Montreal",
+    "program": "FRC"
   },
   {
     "number": "7476",
     "name": "Spongebotics",
-    "location": "Kanata (Earl of March)"
+    "location": "Kanata (Earl of March)",
+    "program": "FRC"
   },
   {
     "number": "7480",
     "name": "Machine Mavericks",
-    "location": "Kingston"
+    "location": "Kingston",
+    "program": "FRC"
   },
   {
     "number": "7902",
     "name": "Markham Firebirds",
-    "location": "Markham, Ontario"
+    "location": "Markham, Ontario",
+    "program": "FRC"
   },
   {
     "number": "8729",
     "name": "Sparkling H2O",
-    "location": "Kanata"
+    "location": "Kanata",
+    "program": "FRC"
   },
   {
     "number": "9062",
     "name": "Critical Circuits",
-    "location": "Hamilton"
+    "location": "Hamilton",
+    "program": "FRC"
   },
   {
     "number": "9406",
     "name": "TechJunior",
-    "location": "Montreal"
+    "location": "Montreal",
+    "program": "FRC"
   },
   {
     "number": "10015",
     "name": "Bubbles",
-    "location": "Aurora"
+    "location": "Aurora",
+    "program": "FRC"
   },
   {
     "number": "11325",
     "name": "Inverse Paradise",
-    "location": "Toronto"
+    "location": "Toronto",
+    "program": "FRC"
   },
   {
     "number": "11809",
     "name": "Kujenga Robotics",
-    "location": "Ottawa"
+    "location": "Ottawa",
+    "program": "FRC"
   },
   {
     "number": "24760",
     "name": "Scuola",
-    "location": "Ottawa"
+    "location": "Ottawa",
+    "program": "FTC"
   },
   {
     "number": "36685",
     "name": "Emerging Tech",
-    "location": "Ottawa"
+    "location": "Ottawa",
+    "program": "FTC"
   },
   {
     "number": "37253",
     "name": "Aloucs Robotics",
-    "location": "Kanata"
+    "location": "Kanata",
+    "program": "FTC"
   }
 ]

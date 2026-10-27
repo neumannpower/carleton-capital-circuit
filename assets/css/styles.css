@@ -622,6 +622,18 @@ h1, h2, h3 { font-family: "Barlow Condensed", Inter, sans-serif; letter-spacing:
   .schedule-page-hero { padding-bottom: 54px; }
 }
 
-/* Registered teams */
-.team-list{width:100%;border-collapse:collapse;margin:2rem 0;text-align:left}.team-list caption{text-align:left;margin-bottom:1rem}.team-list th,.team-list td{padding:.8rem 1rem;border-bottom:1px solid #8884}.team-list th{background:#222;color:#fff}.team-list tbody tr:nth-child(even){background:#8881}
-@media (min-width:981px) and (max-width:1280px){.nav-toggle{display:block}.site-nav{display:none;position:absolute;top:79px;left:20px;right:20px;background:white;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:10px;flex-direction:column;align-items:stretch}.site-nav.open{display:flex}.site-nav .nav-cta{margin-left:0}}
+/* Compact additions within the existing registration and venue sections. */
+.registered-teams { margin-top:28px; padding-top:24px; border-top:1px solid var(--line); scroll-margin-top:110px; }
+.registered-teams h4 { margin:22px 0 10px; font-size:1rem; }
+.registered-teams h4 small { display:block; color:var(--muted); font-weight:400; }
+.registered-team-list { list-style:none; padding:0; margin:0; }
+.registered-team-list li { padding:5px 0; font-size:.9rem; }
+.registered-team-list strong { display:inline-block; min-width:52px; }
+.registered-teams .team-note { margin-top:18px; font-size:.8rem; }
+.registration-sidebar { position:static; align-self:start; }
+.visiting-ottawa { margin-top:48px; padding-top:36px; border-top:1px solid #ffffff30; max-width:850px; }
+.visiting-ottawa h2 { margin:0 0 18px; font-size:clamp(2rem,4vw,3.2rem); text-transform:uppercase; }
+.visiting-ottawa p,.visiting-ottawa li { color:#b7bbc2; }
+.visiting-ottawa li { margin-bottom:12px; }
+.visiting-ottawa strong { color:white; }
+.event-card-fab svg { display:block; }

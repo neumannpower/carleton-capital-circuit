@@ -18,3 +18,10 @@ The original package specifies Namecheap/cPanel. Upload repository contents to t
 ## Maintenance
 
 Public data: assets/data/teams.json and teams.html. Regenerate both when editing entries. Validate team identities with organizers before changes. Original deployment notes are in README.txt.
+
+
+## October 27, 2026 design update
+
+Restores the Desktop v4.4 navigation and layout. Registered teams appear in the Team Registration sidebar, grouped by FRC and FTC; assets/data/teams.json includes program labels. The home venue section includes family-friendly Flash Your Badge museum examples and the Ottawa Tourism signup link. Share Event uses an SVG share icon. Legacy teams.html and team-information.html URLs redirect to registration; no hotel block details are published.
+
+Validation: all 170 local HTML links resolve, JavaScript syntax passes, and home/registration render without horizontal overflow at 1440px and 390px. Existing schedule and load-in PDFs are unchanged. GitHub source updates do not deploy the separate cPanel host.
