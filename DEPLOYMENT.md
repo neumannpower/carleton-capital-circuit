@@ -14,4 +14,4 @@ Before uploading, it downloads every existing file that it would overwrite into 
 
 ## Validation
 
-Simulated FTPS verification confirmed all 33 public files were uploaded and checked, original files were backed up before any upload, index.html was uploaded last, and missing explicit confirmation blocked publication. A live FTPS connection must also pass before treating this new workflow as ready.
+Simulated FTPS verification confirmed all 33 public files were uploaded and checked, original files were backed up before any upload, index.html was uploaded last, and missing explicit confirmation blocked publication. The first live FTPS workflow run succeeded: https://github.com/neumannpower/carleton-capital-circuit/actions/runs/40456690956. All 33 live files were independently verified against the approved Git commit bytes after publication. The production secrets are configured with the dedicated account githubpublish@carletoncc.ca, restricted to public_html. No passwords are stored in this repository.

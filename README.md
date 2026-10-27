@@ -1,27 +1,17 @@
 # Carleton Capital Circuit website
 
-Static site for https://carletoncc.ca, based on Desktop version 4.4.
+Static website for https://carletoncc.ca, preserving the Desktop v4.4 design.
 
-## October 26 update
+## Current site
 
-- Added registered teams and team information pages, navigation and sitemap entries.
-- Public team fields are limited to number, name and home location. No registration contact, accommodation or private form data is included.
-- Ambiguous entry 011 is withheld pending confirmation. Additional robots and program categories remain to be verified.
-- Includes Marriott and Flash Your Badge links with date/eligibility qualifications.
-- Keeps the existing team schedule and draft load-in manual unchanged.
-- Detailed playoff rotation rules remain pending approval; no proposed rules are represented as final.
+The original navigation is retained. Registered teams appear in the Team Registration sidebar, grouped by FRC and FTC. Visiting Ottawa includes linked museums, family dining and entertainment suggestions, Flash Your Badge signup, and the selected Parliament photo. No hotel block details are published.
 
-## Hosting
+Public roster data is in assets/data/teams.json; the visible list is in registration.html. Update both together. No registration contact information or private responses belong in this repository.
 
-The original package specifies Namecheap/cPanel. Upload repository contents to the existing document root to update that host, retaining any server-specific configuration. Creating this repository does not update that hosting automatically. No new license is granted for FIRST, Carleton, CU FIRST, sponsor marks or supplied images.
+## Publishing
 
-## Maintenance
+Editing files or pushing to GitHub never publishes the site automatically. See DEPLOYMENT.md and AGENTS.md. The manual Publish website workflow requires an explicitly approved full commit SHA and a separate publish confirmation. Hosting credentials are held in GitHub production environment secrets and use an FTP account restricted to the website folder.
 
-Public data: assets/data/teams.json and teams.html. Regenerate both when editing entries. Validate team identities with organizers before changes. Original deployment notes are in README.txt.
+The reviewed build d611fdf885c2b22357d523c831ed5a1ca062117f was published on October 27, 2026. The prior live files were backed up outside public_html. Server configuration is preserved during publishing.
 
-
-## October 27, 2026 design update
-
-Restores the Desktop v4.4 navigation and layout. Registered teams appear in the Team Registration sidebar, grouped by FRC and FTC; assets/data/teams.json includes program labels. The home venue section includes family-friendly Flash Your Badge museum examples and the Ottawa Tourism signup link. Share Event uses an SVG share icon. Legacy teams.html and team-information.html URLs redirect to registration; no hotel block details are published.
-
-Validation: all 170 local HTML links resolve, JavaScript syntax passes, and home/registration render without horizontal overflow at 1440px and 390px. Existing schedule and load-in PDFs are unchanged. GitHub source updates do not deploy the separate cPanel host.
+FIRST, Carleton, CU FIRST and sponsor marks retain their existing ownership and usage restrictions. Photo credits are shown alongside the image.
