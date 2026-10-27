@@ -1,0 +1,55 @@
+name: Publish website (manual approval only)
+on:
+  workflow_dispatch:
+    inputs:
+      approved_commit:
+        description: Full 40-character commit SHA explicitly approved for publishing
+        required: true
+        type: string
+      confirmation:
+        description: Type PUBLISH carletoncc.ca after reviewing this version
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: carletoncc-production
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Require explicit publication confirmation
+        env:
+          APPROVED_COMMIT: ${{ inputs.approved_commit }}
+          CONFIRMATION: ${{ inputs.confirmation }}
+        run: |
+          test "$CONFIRMATION" = 'PUBLISH carletoncc.ca'
+          [[ "$APPROVED_COMMIT" =~ ^[0-9a-f]{40}$ ]]
+      - uses: actions/checkout@v4
+        with:
+          path: tooling
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.approved_commit }}
+          path: approved-site
+          persist-credentials: false
+      - name: Back up, publish, and verify reviewed files over FTPS
+        env:
+          WEBSITE_FTP_HOST: ${{ secrets.WEBSITE_FTP_HOST }}
+          WEBSITE_FTP_USER: ${{ secrets.WEBSITE_FTP_USER }}
+          WEBSITE_FTP_PASSWORD: ${{ secrets.WEBSITE_FTP_PASSWORD }}
+          APPROVED_COMMIT: ${{ inputs.approved_commit }}
+          CONFIRMATION: ${{ inputs.confirmation }}
+        run: python tooling/scripts/publish_ftps.py approved-site
+      - name: Retain backup and deployment receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publication-${{ github.run_id }}
+          path: publication-record/
+          if-no-files-found: ignore
+          retention-days: 30
